@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding - [Nama Anda]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 56px; /* Adjust for fixed navbar */
+        }
+        .navbar {
+            background-color: #343a40 !important;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+        .jumbotron {
+            background-color: #e9ecef;
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+            margin-bottom: 0; /* Remove default bottom margin */
+        }
+        .wave {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            transform: rotate(180deg);
+        }
+        .wave::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            width: 200%;
+            height: 200%;
+            background: #e9ecef;
+            left: -50%;
+            bottom: 0;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        }
+        .wave::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            width: 200%;
+            height: 200%;
+            background: #f8f9fa;
+            left: -50%;
+            bottom: 0;
+            animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        }
+        @keyframes wave {
+            0% {transform: translate(0, 0) rotate(0deg);}
+            50% {transform: translate(-50%, 5%) rotate(360deg);}
+            100% {transform: translate(0, 0) rotate(720deg);}
+        }
+        .section-title {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+        .project-card {
+            border: 1px solid #ced4da;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        .project-card img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 200px; /* Adjust as needed */
+        }
+        .project-card-body {
+            padding: 1rem;
+        }
+        .contact-form {
+            margin-top: 2rem;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 4rem;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .jumbotron {
+                padding-top: 6rem;
+            }
+            .section-title {
+                margin-top: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">[Jose Girsang]</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/[josegirsang]" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center" id="home">
+        <div class="container">
+            <img src="WhatsApp Image 2025-04-11 at 16.26.24.jpeg" alt="Foto Profil Anda" class="profile-image rounded-circle mb-3" style="width: 200px; height: 200px; object-fit: cover;">
+            <h1 class="display-4">[Jose Girsang]</h1>
+            <p class="lead">[Mahasiswa Teknik Informatika dengan minat dalam pengembangan web dan design.]</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/[profil_linkedin_anda]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/[username_instagram_anda]" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:[josegirsang2018@gmail.com]"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wave"></div>
+
+    <section id="about" class="container py-5">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="WhatsApp Image 2025-04-11 at 16.26.24.jpeg" alt="Foto About Anda" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3>[Mahasiswa Rekayasa Perangkat Lunak]</h3>
+                <p>[Sebagai mahasiswa yang antusias di jurusan Rekayasa Perangkat Lunak, saya memiliki ketertarikan yang mendalam pada proses pengembangan perangkat lunak dari konsepsi hingga implementasi. Latar belakang pendidikan saya telah membekali saya dengan pemahaman dasar tentang logika pemrograman, struktur data, dan algoritma. Saya sangat tertarik pada pengembangan aplikasi web dan mobile yang inovatif serta pemanfaatan teknologi terkini untuk memecahkan masalah dunia nyata. Tujuan saya adalah menjadi seorang software engineer yang kompeten dan berkontribusi dalam menciptakan solusi perangkat lunak yang efisien, skalabel, dan bermanfaat bagi masyarakat..]</p>
+                <p><strong>Riwayat Pendidikan:</strong></p>
+                <ul>
+                    <li>[Politeknik Negeri Batam], [Jurusan Informatika], [Tahun Masuk (2024)] - [Tahun Lulus (2027)]</li>
+                    <li>[Nama Sekolah Menengah Atas (SMA Tunas Baru )], [Jurusan di SMA (IPS)], [Tahun Masuk SMA (2022)] - [Tahun Lulus SMA (2024)]</li>
+                </ul>
+                <p><strong>Skills:</strong></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            
+                            </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Komunikasi</li>
+                            <li>Git</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Screenshot (377).png" alt="Proyek 1">
+                        <div class="project-card-body">
+                            <h5 class="card-title">[Biodata]</h5>
+                            <p class="card-text">[Cara membuat Biodata]</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Screenshot (376).png" alt="Proyek 2">
+                        <div class="project-card-body">
+                            <h5 class="card-title">[Biodata 2]</h5>
+                            <p class="card-text">[Cara membuat Biodata 2.]</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Screenshot (375).png" alt="Proyek 3">
+                        <div class="project-card-body">
+                            <h5 class="card-title">[Nama Proyek PBL : Pengaduan Keluhan Masyarakat]</h5>
+                            <p class="card-text">[Memantau Masalah Atau Keluhan di Masyarakat.]</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 class="section-title text-center">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3">
+        <div class="container text-center">
+            <div class="social-links">
+                <a href="https://linkedin.com/[profil_linkedin_anda]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/[username_instagram_anda]" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/[username_github_anda]" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mt-2">&copy; 2025 [Jose Girsang]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
